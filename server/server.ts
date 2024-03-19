@@ -3,7 +3,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-app.set("port", process.env.PORT || 3000); // 포트 설정
+app.set("port", process.env.PORT || 5000); // 포트 설정
 app.set("host", process.env.HOST || "0.0.0.0"); // 아이피 설정
 app.set("views", __dirname + "\\pages");
 app.set("view engine", "ejs");

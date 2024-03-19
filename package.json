@@ -1,7 +1,12 @@
 {
   "dependencies": {
+    "concurrently": "^8.2.2",
     "ejs": "^3.1.9",
     "express": "^4.18.3"
+  },
+  "scripts": {
+    "server": "node server/server.ts",
+    "dev": "concurrently \"yarn server\" \"yarn --cwd ./client dev\""
   },
   "name": "express-html",
   "version": "1.0.0",
