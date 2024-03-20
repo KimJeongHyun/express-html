@@ -35,6 +35,7 @@ app.post("/test", function (req, res) {
 // 위와 같은 흐름의 코드는 로그인/회원가입과 같은 동작으로, 사실은 react 같은 라이브러리를 굳이 쓰지 않아도 손쉽게 구현할 수 있다.
 
 // 즉 생각하기에, react-router v6에서 loader, action등을 도입한 것은 react가 필요이상으로 UI 외의 것을 신경쓰지 않도록 고안된 것이 아닐까? 생각이 든다.
+// form data를 기반으로 이루어지는 서버 동작 형태의 것들을 UI 쪽이 신경쓰지 않도록 잘 통합하고자한 것 같다. 합리적인 의미. remix를 쓰면 체감할 수 있다고 하는데, 안써봐서 몰?루
 
 app.listen(app.get("port"), app.get("host"), () =>
   console.log(
